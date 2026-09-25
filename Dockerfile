@@ -3,7 +3,7 @@ FROM gibiansky/ihaskell:latest
 
 # If your display packages require system libraries (like Cairo for charts or diagrams), 
 # switch to root to install them via apt-get first.
-USER root
+# USER root
 # RUN apt-get update && apt-get install -y \
 #     libmagic-dev \
 #     libcairo2-dev \
@@ -17,8 +17,10 @@ USER jovyan
 # along with any specific display extensions you want to use.
 RUN stack install --fast \
     ihaskell \
-    ihaskell-basic \
-    ihaskell-aeson \
-    ihaskell-blaze \
-    ihaskell-diagrams \
-    ihaskell-charts
+    ihaskell-basic
+
+#     \
+#     ihaskell-aeson \
+#     ihaskell-blaze \
+#     ihaskell-diagrams \
+#     ihaskell-charts
