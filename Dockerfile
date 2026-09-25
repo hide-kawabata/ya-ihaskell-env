@@ -1,4 +1,5 @@
-FROM ghcr.io/ihaskell/ihaskell-notebook:latest
+# FROM ghcr.io/ihaskell/ihaskell-notebook:latest
+FROM ghcr.io/ihaskell/ihaskell-notebook:master
 
 
 # # Use the official IHaskell image as the base
