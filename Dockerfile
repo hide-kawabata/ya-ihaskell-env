@@ -11,7 +11,7 @@ USER root
 #     && rm -rf /var/lib/apt/lists/*
 
 # Switch back to the default user
-USER me
+USER jovyan
 
 # Tell stack to install the base ihaskell package globally, 
 # along with any specific display extensions you want to use.
