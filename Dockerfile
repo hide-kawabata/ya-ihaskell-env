@@ -16,11 +16,13 @@ USER jovyan
 # Tell stack to install the base ihaskell package globally, 
 # along with any specific display extensions you want to use.
 RUN stack install --fast \
-    ihaskell \
-    ihaskell-basic
+    ihaskell
+#    \
+#    ihaskell-aeson \
+#    ihaskell-blaze \
+#    ihaskell-diagrams \
+#    ihaskell-charts
 
-#     \
-#     ihaskell-aeson \
-#     ihaskell-blaze \
-#     ihaskell-diagrams \
-#     ihaskell-charts
+#    \
+#    ihaskell-basic
+
